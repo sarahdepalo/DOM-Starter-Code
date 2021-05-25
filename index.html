@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOM Starter Kit</title>
+    <title>Mad Libs Generator</title>
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-
+    <main>
+        <h2>Mad Libs Generator</h2>
+        <form id="generateMadLib">
+            <fieldset>
+                <label>Your Name
+                    <input type="text" name="name" placeholder="Your Name" id="nameInput">
+                </label>
+                <label>Favorite Subject
+                    <input type="text" name="favSubject" placeholder="Favorite Subject" id="subjectInput">
+                </label>
+                <button type="button" id="madLibButton">GENERATE</button>
+            </fieldset>
+        </form>
+        <p>
+            My name is <span id="myName" class="placeholder">Name</span> and my favorite subject is <span class="placeholder" id="mySubject">Subject</span>.
+        </p>
+    </main>
 </body>
 <script src="js/index.js"></script>
 </html>
