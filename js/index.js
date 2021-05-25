@@ -9,34 +9,32 @@ const mySubject = document.querySelector('#mySubject');
 const generateButton = document.querySelector('#madLibButton');
 
 
-function changeName () {
-    myName.innerHTML = nameInput.value;
+// function changeName () {
+//     myName.innerHTML = nameInput.value;
 
-}
+// }
 
-function changeSubject () {
-    mySubject.innerHTML = subjectInput.value;
+// function changeSubject () {
+//     mySubject.innerHTML = subjectInput.value;
 
-}
+// }
 
-
+// Solution that uses forEach:
 function grabValues () {
     const replacementWords = document.querySelectorAll('input');
     const replacementArray = Array.from(replacementWords);
+    // Tests that the above is actually an array:
     const test = Array.isArray(replacementArray);
     console.log(test);
-    replacementArray.forEach(element => console.log(element.value));
-    replacementArray.forEach((index) => {
-        console.log('index: '+ index);
+    console.log(replacementArray);
+    //Tests that its getting the right values:
+    replacementArray.forEach((element, index) => {
+       console.log(element.value, index);
+       myName.innerHTML = replacementArray[0].value;
+       mySubject.innerHTML = replacementArray[1].value;
+ 
     })
-     
-}
-
-function changePlaceholders () {
-
-}
-
-// create another function to change those placeholder values.
+   }
 
 
 generateButton.addEventListener('click', function() {
