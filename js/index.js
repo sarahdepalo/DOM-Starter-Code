@@ -36,7 +36,7 @@ function grabValues () {
        mySubject.innerHTML = replacementArray[1].value;
        myColor.innerHTML = replacementArray[2].value;
        myAnimal.innerHTML = replacementArray[3].value;
- 
+        
     })
    }
 

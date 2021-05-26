@@ -1,3 +1,5 @@
-# Starter Code for DOM Programming.
+# Basic MadLibs Generator
 
-Starter HTML/CSS and JS structure.
+MadLibs Generator that uses a function to grab user input and replace placholder text.
+
+![](screenshot.png)
