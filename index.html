@@ -14,17 +14,28 @@
         <h2>Mad Libs Generator</h2>
         <form id="generateMadLib">
             <fieldset>
+                <div class="question-container">
                 <label>Your Name
                     <input type="text" name="name" placeholder="Your Name" id="nameInput">
                 </label>
                 <label>Favorite Subject
                     <input type="text" name="favSubject" placeholder="Favorite Subject" id="subjectInput">
                 </label>
+                </div>
+                <label>Favorite Color
+                    <input type="text" name="favColor" placeholder="Favorite Color" id="colorInput">
+                </label>
+                <label>Favorite Animal
+                    <input type="text" name="favAnimal" placeholder="Favorite Animal" id="animalInput">
+                </label>
                 <button type="button" id="madLibButton">GENERATE</button>
             </fieldset>
         </form>
         <p>
             My name is <span id="myName" class="placeholder">Name</span> and my favorite subject is <span class="placeholder" id="mySubject">Subject</span>.
+        </p>
+        <p>
+            My favorite color is <span id = "myColor" class="placeholder">Color</span> and my favorite animal is a <span id="myAnimal" class="placeholder">Animal</span>.
         </p>
     </main>
 </body>

@@ -5,6 +5,8 @@ const nameInput = document.querySelector('#nameInput');
 const subjectInput = document.querySelector('#subjectInput');
 const myName = document.querySelector('#myName');
 const mySubject = document.querySelector('#mySubject');
+const myColor = document.querySelector('#myColor');
+const myAnimal = document.querySelector('#myAnimal');
 
 const generateButton = document.querySelector('#madLibButton');
 
@@ -32,6 +34,8 @@ function grabValues () {
        console.log(element.value, index);
        myName.innerHTML = replacementArray[0].value;
        mySubject.innerHTML = replacementArray[1].value;
+       myColor.innerHTML = replacementArray[2].value;
+       myAnimal.innerHTML = replacementArray[3].value;
  
     })
    }
